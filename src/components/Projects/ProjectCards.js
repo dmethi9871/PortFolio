@@ -28,6 +28,7 @@ function ProjectCards(props) {
             href={props.demoLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
+            title="Click to preview"
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
