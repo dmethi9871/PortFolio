@@ -10,6 +10,8 @@ function Type() {
           "Freelancer",
           "MERN Stack Developer",
           "Full Stack Developer",
+          "Android Developer",
+          "Java Developer"
         ],
         autoStart: true,
         loop: true,
