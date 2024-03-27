@@ -26,10 +26,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Spotify_Clone"
+              title="Smart Helmet"
               description="Your personalized music streaming platform! Enjoy seamless access to millions of songs, curated playlists, and personalized recommendations. Discover new music, create your own playlists, and experience music like never before. Join the Splotify community "
-              ghLink="https://github.com/dmethi9871/Spotify-Clone"
-              demoLink="https://spotify-clone-three-weld.vercel.app/"   
+              ghLink="https://github.com/dmethi9871/Smart-helmet"
+              demoLink="https://smart-helmet.vercel.app/"   
             />
             <ReactTooltip id="demo-tooltip2" place="top" effect="solid">
               <iframe src="https://spotify-clone-three-weld.vercel.app/" title="demo-preview" />
