@@ -1,7 +1,3 @@
-Sure, below is an example of a README file for a portfolio website built using React.js:
-
----
-
 # My Portfolio Website
 
 This is a portfolio website built using React.js to showcase my projects, skills, and experience.
