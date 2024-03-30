@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
+import { RiFolderHistoryLine } from "react-icons/ri";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -61,6 +62,11 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/Accomplishments" onClick={() => updateExpanded(false)}>
+                <RiFolderHistoryLine style={{ marginBottom: "2px" }} /> Accomplishments
               </Nav.Link>
             </Nav.Item>
             <Nav.Item className="fork-btn">
