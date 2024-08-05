@@ -451,22 +451,26 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
-
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  width: 100%;
+  max-width: 350px;
+  background-color: transparent !important; /* Adjust as needed */
+  margin: 15px auto; /* Center the cards */
   color: white !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+}
+.project-card-view .card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: fill; /* Ensure images cover the space without distortion */
 }
 .project-card-view:hover {
   transform: scale(1.02) !important;
