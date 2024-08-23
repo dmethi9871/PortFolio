@@ -60,6 +60,10 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+      <h1 style={{ color: "white", position: "relative", marginBottom:"50px", fontSize:"50px"}}>
+            <span style={{ borderBottom: "4px solid purple", fontWeight: "bold", marginRight: "5px" }}>Contact</span>
+            <strong className='purple' style={{ borderBottom: "4px solid #ffff", fontWeight: "bold" }}>Me</strong>
+          </h1>
         <Row className="intro-section">
           <Col md={4} className="form-col">
             <Card className="form-card">
