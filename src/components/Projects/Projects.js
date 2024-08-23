@@ -17,6 +17,7 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
+      
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>

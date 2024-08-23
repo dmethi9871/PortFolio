@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
+import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser, AiTwotoneSafetyCertificate, AiOutlineSafetyCertificate } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { RiFolderHistoryLine } from "react-icons/ri";
 
@@ -52,6 +52,11 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/Cetificates" onClick={() => updateExpanded(false)}>
+                <AiOutlineSafetyCertificate style={{ marginBottom: "2px" }} /> Certifications
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>

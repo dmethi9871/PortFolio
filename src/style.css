@@ -319,21 +319,28 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  /* padding-bottom: 70px !important; */
   padding-top: 70px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+ 
   padding-bottom: 20px !important;
+  
   text-align: center;
 }
+.home-about-description-main {
+  color: white !important;
 
+  padding-bottom: 20px !important;
+  margin-left: auto;
+  text-align: center;
+}
 .home-about-body {
-  padding-top: 50px;
+ 
   font-size: 1.2em !important;
-  text-align: left;
+  text-align: right;
 }
 
 .home-about-social {
@@ -627,6 +634,116 @@ button:focus {
   }
 }
 /* --------- */
+/* Home2 */
+/* --------- */
+.form-col {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 600px; /* Increase width for larger forms */
+  background-color: transparent !important;  /* Light background for readability */
+  color: #ffffff; /* Dark text color for contrast */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  padding: 2rem;
+}
+
+.form-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--imp-text-color) !important; /* Increased font size for title */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Increased spacing between form elements */
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.form-icon {
+  margin-right: 8px;
+  color: #6f42c1; /* Purple color for icons */
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: #f5f5f5!important;
+  border: 1px solid #0573e1;
+  background-color: transparent !important;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459)  /* Border color for input fields */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.home-about-description {
+  text-align: left;
+}
+
+.home-about-description-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.purple {
+  color: #6f42c1;
+}
+
+.home-about-social {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-about-social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon-colour {
+  color: #333;
+  font-size: 2rem;
+}
+
+.icon-colour:hover {
+  color: #007bff;
+}
+
+@media (max-width: 767px) {
+  .form-card {
+    padding: 1rem; /* Reduce padding on smaller screens */
+    max-width: 100%;
+  }
+}
+
+/* --------- */
 /* Resume */
 /* --------- */
 
@@ -768,4 +885,106 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+/* Container for the home section */
+.home-section {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+/* Style for the Vertical Timeline */
+.vertical-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Style for the Vertical Timeline Elements */
+.vertical-timeline-element {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the work elements */
+.vertical-timeline-element--work {
+  border-left: 4px transparent;
+  
+}
+
+/* Style for the education elements */
+.vertical-timeline-element--education {
+  /* border-left: 4px solid rgb(233, 30, 99); */
+}
+
+/* Timeline element content */
+.vertical-timeline-element-content {
+  padding: 20px;
+  border-radius: 6px;
+ 
+  max-width: 350px;
+  background-color: transparent !important; /* Adjust as needed */
+  margin: 15px auto; /* Center the cards */
+  color: white !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  background: transparent;
+}
+
+/* Content style for work and education */
+.vertical-timeline-element-content--work {
+  background: rgb(33, 150, 243);
+  color: #fff;
+}
+
+.vertical-timeline-element-content--education {
+  background: rgb(233, 30, 99);
+  color: #fff;
+}
+
+
+.vertical-timeline-element-title {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color:  #cd5ff8;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #666;
+}
+
+/* Style for the timeline icon */
+.vertical-timeline-element-icon {
+  background: rgb(33, 150, 243);
+  color: #fff;
+}
+
+/* Additional icon styling */
+.vertical-timeline-element-icon--education {
+  background: rgb(233, 30, 99);
+}
+
+.vertical-timeline-element-icon--work {
+  background: rgb(33, 150, 243);
+}
+
+/* Empty timeline element at the end */
+.vertical-timeline-element:last-child {
+  display: none;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .vertical-timeline {
+    padding: 0 10px;
+  }
+
+  .vertical-timeline-element {
+    padding: 10px;
+  }
 }

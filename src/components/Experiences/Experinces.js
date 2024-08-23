@@ -15,7 +15,7 @@ function Experinces() {
       <Particle />
       <Container fluid className='project-section'>
         <Container>
-          <h1 style={{ color: "white", position: "relative" }}>
+          <h1 style={{ color: "white", position: "relative", marginBottom:"50px", fontSize:"50px"}}>
             <span style={{ borderBottom: "4px solid purple", fontWeight: "bold", marginRight: "5px" }}>Work</span>
             <strong className='purple' style={{ borderBottom: "4px solid #ffff", fontWeight: "bold" }}>History</strong>
           </h1>
