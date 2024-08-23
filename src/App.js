@@ -19,6 +19,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Experinces from "./components/Experiences/Experinces";
+import Home2 from "./components/Home/Home2";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -44,6 +45,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/Accomplishments" element={<Experinces/>} />
           <Route path="/Cetificates" element={<Certification/>} />
+          <Route path="/Contact" element={<Home2/>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

@@ -70,6 +70,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              <Nav.Link as={Link} to="/Contact" onClick={() => updateExpanded(false)}>
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Contact me
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
               <Nav.Link as={Link} to="/Accomplishments" onClick={() => updateExpanded(false)}>
                 <RiFolderHistoryLine style={{ marginBottom: "2px" }} /> Accomplishments
               </Nav.Link>
