@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ScrollToTop from "./ScrollToTop";
 
 function Footer() {
   let date = new Date();
@@ -59,6 +60,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
+                <ScrollToTop/>
               </a>
             </li>
           </ul>
