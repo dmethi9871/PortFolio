@@ -96,12 +96,16 @@ function Home2() {
               </Card.Body>
             </Card>
           </Col>
-          
+         
           <Col md={8} className="home-about-description">
+          
             <div className="home-about-description-main">
+            <br/>  <br/>  <br/>   <br/>
               <Tilt className="myAvatar">
                 <img src={myImg} className="img-fluid" alt="avatar" />
+               
               </Tilt>
+              <br/>
               <div className="intro-content">
                 <h1 className="intro-heading">
                   LET ME <span className="purple">INTRODUCE</span> MYSELF
